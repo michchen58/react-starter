@@ -4,8 +4,8 @@
   "description": "PRH React Redux Webpack Babel ESLint ES8 SASS starter project",
   "main": "index.js",
   "scripts": {
-    "start:dev": "webpack-dev-server --env development --config webpack.config.js",
-    "start:prod": "webpack-dev-server --env production --config webpack.config.js",
+    "start:dev": "webpack-dev-server --env development --config webpack.config.js --host 0.0.0.0",
+    "start:prod": "webpack-dev-server --env production --config webpack.config.js --host 0.0.0.0",
     "build": "webpack --env production --config webpack.config.js",
     "test": "jest",
     "test:watch": "jest --watch"

@@ -1,0 +1,19 @@
+dev_server:
+  build: .
+  container_name: react_starter_webpack_dev_server
+  volumes:
+    - .:/usr/src/app
+  ports: 
+    - 8080:8080
+  tty: true
+  stdin_open: true
+  command: >
+    sh -c '
+    if test -d node_modules;
+    then
+      echo node_modules_exists;
+    else
+      echo updating node_modules for the first time, this may take a while &&
+      cp -a /tmp/node_modules /usr/src/app;
+    fi && npm run start:dev
+    '

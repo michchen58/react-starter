@@ -36,7 +36,7 @@ module.exports = (env) => {
     devServer: {
       contentBase: './public/',
       watchContentBase: true,
-      open: true
+      open: false
     },
 
     mode: env
