@@ -6,5 +6,5 @@ import App from './App';
 import './styles/main.scss';
 
 render(
-  <App/>, document.getElementById('root')
+  <App />, document.getElementById('root'),
 );

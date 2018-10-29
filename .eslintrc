@@ -1,8 +1,10 @@
 {
   "env": {
-    "browser": true
+    "browser": true,
+    "jest": true
   },
   "extends": [
+    "airbnb"
   ],
   "parserOptions": {
     "ecmaVersion": 8,
@@ -16,5 +18,8 @@
       "version": "16.5.2"
     }
   },
-  "parser": "babel-eslint"
+  "parser": "babel-eslint",
+  "rules": {
+    "react/prefer-stateless-function": "off"
+  }
 }
