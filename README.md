@@ -1,13 +1,30 @@
 # React Starter Project
 
+## Tech Stack
+
+React  
+Redux  
+ESLint using [Airbnb's Javascript and React style guides](https://github.com/airbnb/javascript)  
+Babel for Javascript ES8  
+Webpack 4  
+node 8.5.0
+npm 6.4.1  
+SASS  
+Docker  
+
 ## Getting Started
 
 ### Docker
 
-Start webpack-dev-server in Docker:
+The recommended way to get started is to run the containerized development environment in Docker. This will mirror the production build environment exactly.
+
+Install [Docker](https://docs.docker.com/install/).
+
+Start hot-swapping `webpack-dev-server` on [http://localhost:8080](http://localhost:8080):  
+
 ```
 docker-compose up
-```
+``` 
 
 Stop all Docker processes:
 ```
@@ -15,6 +32,8 @@ docker-compose down
 ```
 
 ### Local Install
+
+Alternately, you can run development locally. However, because your OS, node, and npm versions may differ from what's expected in the configured setup, additional configuration may be necessary.
 
 #### Dependencies:
 node v8.5.0  
